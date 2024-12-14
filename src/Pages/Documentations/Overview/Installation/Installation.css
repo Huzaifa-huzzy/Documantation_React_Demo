@@ -1,0 +1,63 @@
+.installation-container {
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .installation-container h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .installation-description {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .installation-step {
+    margin-bottom: 30px;
+  }
+  
+  .installation-step h2 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .installation-step p {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .code-block {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1em;
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+  
+  .code-block code {
+    color: #f8f8f2;
+  }
+  
+  .installation-note {
+    font-size: 1em;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  .installation-note a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .installation-note a:hover {
+    text-decoration: underline;
+  }
+  

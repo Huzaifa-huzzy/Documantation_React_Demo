@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: rgb(21, 19, 21);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Ubuntu", sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.card-container {
+  width: 80%;
+  max-width: 700px;
+  margin: 30px;
+  opacity: 0; /* Start with hidden opacity */
+  transform: translateY(50px); /* Start position for slide effect */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transition for fade and slide */
+}
+
+.card-container.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Slide into place */
+}
+
+.card {
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.card a {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #7a7a7a;
+  background-color: #333;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.25s ease;
+}
+
+.card a:hover {
+  transform: translate(-30px, -30px);
+  border-color: #a600ff;
+  background-color: #444;
+}
+
+.card--display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.card--display i {
+  font-size: 60px;
+  margin-top: 20px;
+  color: #ec83ff;
+}
+
+.card--display h2 {
+  margin: 20px 0 0;
+  color: white;
+}
+
+.card--hover {
+  display: none;
+}
+
+.card a:hover .card--display {
+  display: none;
+}
+
+.card a:hover .card--hover {
+  display: block;
+}
+
+.card--hover h2 {
+  margin: 20px 0;
+  color: #ec83ff;
+}
+
+.card--hover p {
+  font-weight: normal;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.card--hover p.link {
+  margin: 20px 0 0;
+  font-weight: bold;
+  color: #ec83ff;
+}
+
+.card--border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 2px dashed #d753ff;
+  z-index: -1;
+}
+
+.card--dark a {
+  color: #ec83ff;
+  background-color: #222;
+  border-color: #555;
+}
+
+.card--dark a:hover .link {
+  color: #fff;
+}

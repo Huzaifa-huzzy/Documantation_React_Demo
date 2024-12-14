@@ -1,0 +1,82 @@
+/* About Section with Background Image */
+.about-section {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./Aboutimg/aboutimg1.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.about-content {
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  padding: 20px; 
+  border-radius: 10px;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+.h2{
+  color: #fff;
+}
+.about-coding-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 1000px;
+  padding: 20px;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  opacity: 0; 
+  transform: translateY(50px); 
+  width: 80%; 
+  margin: 0 auto;
+}
+
+.about-coding-section.fade-in {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+.coding-image {
+  width: 45%; 
+}
+
+.coding-image img {
+  width: 100%; 
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.coding-details {
+  padding: 0 20px;
+  width: 45%; 
+  color: #fff; 
+}
+

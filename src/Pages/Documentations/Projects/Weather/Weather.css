@@ -1,0 +1,37 @@
+
+.weather-project {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .weather-project label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .weather-project select {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .weather-info h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .weather-info p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
